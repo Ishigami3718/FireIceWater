@@ -25,7 +25,7 @@ public class CardView : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (!GameManager.Instance.isClicable) return;
+        if (!GameManager.Instance.isClicable || !GameManager.Instance.canPlay) return;
         cardCanvas.sortingOrder = 100;
 
         transform.localScale = originalScale * hoverScale;
@@ -40,7 +40,7 @@ public class CardView : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!GameManager.Instance.isClicable) return;
+        if (!GameManager.Instance.isClicable || !GameManager.Instance.canPlay) return;
         GameManager.Instance.OnCardSelected(this);
     }
 }

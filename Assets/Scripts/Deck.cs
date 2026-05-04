@@ -13,7 +13,7 @@ public class Deck
     public Deck(List<CardData> cardList)
     {
         cards = new List<CardData>(cardList);
-        temp = new List<CardData>(cardList);
+        //temp = new List<CardData>(cardList);
     }
 
     public void Shuffle()
@@ -37,7 +37,8 @@ public class Deck
 
     public void ResetDeck()
     {
-        cards = new List<CardData>(temp);
+        cards.AddRange(temp);
+        temp.Clear();
         Shuffle();
         OnDeckEmpty?.Invoke();
     }
@@ -45,6 +46,9 @@ public class Deck
     public void AddCard(CardData card)
     {
         cards.Add(card);
+    }
+    public void AddCardInTemp(CardData card)
+    {
         temp.Add(card);
     }
 }

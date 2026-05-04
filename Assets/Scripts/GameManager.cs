@@ -86,11 +86,15 @@ public class GameManager : MonoBehaviour
         if (isPlayerTurn)
         {
             StartCoroutine(BattleSequenceOnPlayerTurn());
+            deck.AddCardInTemp(card.data);
             Destroy(card.gameObject);
+            isClicable = false;
+            canPlay = false;
         }
         else if(!isDefeated)
         {
             StartCoroutine(WaitCompareTime());
+            deck.AddCardInTemp(card.data);
             Destroy(card.gameObject);
 
         }
@@ -138,8 +142,16 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
 
-        isClicable = true;
-        canPlay = true;
+        if (isDefeated)
+        {
+            isClicable = false;
+            canPlay = false;
+        }
+        else
+        {
+            isClicable = true;
+            canPlay = true;
+        }
     }
 
     private IEnumerator WaitCompareTime()
