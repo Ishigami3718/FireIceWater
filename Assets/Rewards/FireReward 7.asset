@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e74ccc4cb5b997429a70644019e8e80, type: 3}
+  m_Name: FireReward 7
+  m_EditorClassIdentifier: Assembly-CSharp::RewardData
+  icon: {fileID: -1391460578456292682, guid: 399ad4c861f196e479fde04b285c16dc, type: 3}
+  type: 0
+  cardToGive: {fileID: 11400000, guid: dab3fc1d781e59f46b8e08d580e519f3, type: 2}
+  healAmount: 0

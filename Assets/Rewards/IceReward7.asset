@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e74ccc4cb5b997429a70644019e8e80, type: 3}
+  m_Name: IceReward7
+  m_EditorClassIdentifier: Assembly-CSharp::RewardData
+  icon: {fileID: -8769377271529093100, guid: 862b46a51e8b4d04087ff4e982e304f1, type: 3}
+  type: 0
+  cardToGive: {fileID: 11400000, guid: a429f0431acc30b49ad7f2b0cde99418, type: 2}
+  healAmount: 0

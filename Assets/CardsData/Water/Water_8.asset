@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601e5a7e127f24540a2055202e367c3e, type: 3}
+  m_Name: Water_8
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  element: 2
+  value: 8
+  image: {fileID: 1013303432864998715, guid: c0852bb818b10de4b9c662c8379a818d, type: 3}
